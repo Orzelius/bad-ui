@@ -3,7 +3,7 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
 
     options: {
-      whitelistPatterns: [/^bg-/],
+      safelist: [/^bg-/],
     },
   },
   darkMode: false, // or 'media' or 'class'
