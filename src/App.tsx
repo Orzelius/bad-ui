@@ -3,7 +3,6 @@ import './App.css';
 import { audio } from './audio';
 import Fade from './Fade';
 import useWindowDimensions from './useDimensions';
-import { useSpring, animated } from 'react-spring'
 
 const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple", "pink"];
 const color = colors[Math.floor(Math.random() * colors.length)];
@@ -39,6 +38,7 @@ const App: React.FC<{ debug: boolean }> = ({ debug }) => {
       console.log("Cleaned up!");
       if (timeoutId) clearTimeout(timeoutId);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onInster = () => {
@@ -78,7 +78,7 @@ const App: React.FC<{ debug: boolean }> = ({ debug }) => {
             {Fade(color, 20 + 'px', scrnWidth / 12 + 'px', true)}
           </div>
           <div className="text-left inline-block" style={{ width: scrnWidth / 12 * 10 }}>
-            <animated.p className="absolute transform" style={{ marginLeft: note * (scrnWidth / 12) + 'px' }}>^</animated.p>
+            <p className="absolute transform" style={{ marginLeft: note * (scrnWidth / 12) + 'px' }}>^</p>
           </div>
         </div>
       </div>
