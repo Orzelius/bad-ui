@@ -6,7 +6,7 @@ module.exports = {
       safelist: [/^bg-/],
     },
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class' 
   theme: {
     extend: {},
   },
