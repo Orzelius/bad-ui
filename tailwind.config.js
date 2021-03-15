@@ -4,14 +4,14 @@ module.exports = {
 
     options: {
       whitelistPatterns: [
-        "/bg-coolGray$/",
-        "/bg-red$/",
-        "/bg-amber$/",
-        "/bg-emerald$/",
-        "/bg-blue$/",
-        "/bg-indigo$/",
-        "/bg-violet$/",
-        "/bg-pink$/",
+        "/^bg-coolGray-/",
+        "/^bg-red-/",
+        "/^bg-amber-/",
+        "/^bg-emerald-/",
+        "/^bg-blue-/",
+        "/^bg-indigo-/",
+        "/^bg-violet-/",
+        "/^bg-pink-/",
       ],
     },
   },
